@@ -1,5 +1,4 @@
 import React from 'react';
-import demo from '../assets/demo-app (1).webp'
 import download from '../assets/icon-downloads.png'
 import star from '../assets/icon-ratings.png'
 const Card = ({app}) => {

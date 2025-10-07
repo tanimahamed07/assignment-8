@@ -5,7 +5,7 @@ import { Link } from 'react-router';
 import useApps from '../Hooks/useApps';
 
 const Home = () => {
-    const {apps} = useApps()
+    const { apps } = useApps()
     return (
 
         <>
@@ -18,9 +18,9 @@ const Home = () => {
                 </div>
                 <div className='py-[40px] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-[16px]'>
                     {/* card  */}
-                   {
-                    apps.slice(0,8).map(app => <Card app={app}></Card>)
-                   }
+                    {
+                        apps.slice(0, 8).map((app, index) => <Card key={index} app={app}></Card>)
+                    }
                     {/* <Card></Card> */}
                 </div>
             </div>
