@@ -1,0 +1,362 @@
+[
+  {
+    "id": 1,
+    "image": "https://cdn-icons-png.flaticon.com/512/733/733547.png",
+    "title": "Facebook",
+    "companyName": "Meta Platforms, Inc.",
+    "description": "Connect with friends, share updates, join groups, and explore communities that match your passions and lifestyle effortlessly. Stay in touch, discover events, follow favorite pages, and engage in meaningful conversations across a vibrant social network.",
+    "size": 88,
+    "reviews": 1580,
+    "ratingAvg": 4.3,
+    "downloads": 5000,
+    "ratings": [
+      { "name": "1 star", "count": 120 },
+      { "name": "2 star", "count": 240 },
+      { "name": "3 star", "count": 460 },
+      { "name": "4 star", "count": 980 },
+      { "name": "5 star", "count": 1340 }
+    ]
+  },
+  {
+    "id": 2,
+    "image": "https://cdn-icons-png.flaticon.com/512/1384/1384063.png",
+    "title": "Instagram",
+    "companyName": "Instagram, Inc.",
+    "description": "Capture your best moments, share photos, reels, and stories, and connect with friends, influencers, and favorite brands every day. Explore creative tools, AR filters, and interactive features to express your personality and creativity in fun ways.",
+    "size": 74,
+    "reviews": 1320,
+    "ratingAvg": 4.5,
+    "downloads": 5000,
+    "ratings": [
+      { "name": "1 star", "count": 90 },
+      { "name": "2 star", "count": 180 },
+      { "name": "3 star", "count": 420 },
+      { "name": "4 star", "count": 980 },
+      { "name": "5 star", "count": 1170 }
+    ]
+  },
+  {
+    "id": 3,
+    "image": "https://cdn-icons-png.flaticon.com/512/3670/3670051.png",
+    "title": "WhatsApp Messenger",
+    "companyName": "WhatsApp LLC",
+    "description": "Chat, call, and share instantly with people all around the world. Experience secure communication, media sharing, voice messages, and video calls in real-time with friends, family, and groups. Keep connected effortlessly anytime, anywhere.",
+    "size": 56,
+    "reviews": 1720,
+    "ratingAvg": 4.7,
+    "downloads": 10000,
+    "ratings": [
+      { "name": "1 star", "count": 70 },
+      { "name": "2 star", "count": 150 },
+      { "name": "3 star", "count": 310 },
+      { "name": "4 star", "count": 900 },
+      { "name": "5 star", "count": 1580 }
+    ]
+  },
+  {
+    "id": 4,
+    "image": "https://cdn-icons-png.flaticon.com/512/732/732200.png",
+    "title": "Google Chrome",
+    "companyName": "Google LLC",
+    "description": "Browse quickly and securely with Google Chrome. Sync across devices, use extensions, manage passwords, and enjoy a smooth, fast, and safe browsing experience. Explore web content effortlessly with tabs, bookmarks, and smart suggestions.",
+    "size": 120,
+    "reviews": 1020,
+    "ratingAvg": 4.4,
+    "downloads": 10000,
+    "ratings": [
+      { "name": "1 star", "count": 100 },
+      { "name": "2 star", "count": 200 },
+      { "name": "3 star", "count": 400 },
+      { "name": "4 star", "count": 1100 },
+      { "name": "5 star", "count": 850 }
+    ]
+  },
+  {
+    "id": 5,
+    "image": "https://cdn-icons-png.flaticon.com/512/1384/1384060.png",
+    "title": "YouTube",
+    "companyName": "Google LLC",
+    "description": "Watch trending videos, upload your own content, explore entertainment, tutorials, and live streams on YouTube. Subscribe to channels, create playlists, enjoy offline viewing, and personalize your experience with AI-based recommendations.",
+    "size": 98,
+    "reviews": 2200,
+    "ratingAvg": 4.5,
+    "downloads": 10000,
+    "ratings": [
+      { "name": "1 star", "count": 150 },
+      { "name": "2 star", "count": 260 },
+      { "name": "3 star", "count": 480 },
+      { "name": "4 star", "count": 1200 },
+      { "name": "5 star", "count": 1990 }
+    ]
+  },
+  {
+    "id": 6,
+    "image": "https://cdn-icons-png.flaticon.com/512/732/732228.png",
+    "title": "Netflix",
+    "companyName": "Netflix, Inc.",
+    "description": "Stream blockbuster movies, original shows, and documentaries anytime. Enjoy personalized recommendations, HD and offline streaming, and an ever-growing library of entertainment across genres, languages, and interests worldwide.",
+    "size": 88,
+    "reviews": 930,
+    "ratingAvg": 4.2,
+    "downloads": 1000,
+    "ratings": [
+      { "name": "1 star", "count": 210 },
+      { "name": "2 star", "count": 350 },
+      { "name": "3 star", "count": 780 },
+      { "name": "4 star", "count": 1200 },
+      { "name": "5 star", "count": 670 }
+    ]
+  },
+  {
+    "id": 7,
+    "image": "https://cdn-icons-png.flaticon.com/512/733/733579.png",
+    "title": "X (Twitter)",
+    "companyName": "X Corp.",
+    "description": "Join conversations, follow global news, and express your opinions with millions of users worldwide. Share posts, media, and engage in trending discussions in real-time with a dynamic and interactive platform for ideas.",
+    "size": 64,
+    "reviews": 810,
+    "ratingAvg": 4.1,
+    "downloads": 1000,
+    "ratings": [
+      { "name": "1 star", "count": 200 },
+      { "name": "2 star", "count": 310 },
+      { "name": "3 star", "count": 520 },
+      { "name": "4 star", "count": 1000 },
+      { "name": "5 star", "count": 607 }
+    ]
+  },
+  {
+    "id": 8,
+    "image": "https://cdn-icons-png.flaticon.com/512/174/174857.png",
+    "title": "LinkedIn",
+    "companyName": "LinkedIn Corporation",
+    "description": "Expand your professional network, discover job opportunities, and showcase your career achievements. Connect with industry leaders, follow companies, and grow your skills with curated content and networking opportunities.",
+    "size": 112,
+    "reviews": 420,
+    "ratingAvg": 4.3,
+    "downloads": 1000,
+    "ratings": [
+      { "name": "1 star", "count": 90 },
+      { "name": "2 star", "count": 140 },
+      { "name": "3 star", "count": 220 },
+      { "name": "4 star", "count": 580 },
+      { "name": "5 star", "count": 310 }
+    ]
+  },
+  {
+    "id": 9,
+    "image": "https://cdn-icons-png.flaticon.com/512/3046/3046121.png",
+    "title": "TikTok",
+    "companyName": "ByteDance Ltd.",
+    "description": "Create and share fun, engaging short videos with music, effects, and trends that connect millions of creators worldwide. Discover viral challenges, collaborate with others, and enjoy endless entertainment on the platform.",
+    "size": 112,
+    "reviews": 1100,
+    "ratingAvg": 4.4,
+    "downloads": 5000,
+    "ratings": [
+      { "name": "1 star", "count": 140 },
+      { "name": "2 star", "count": 230 },
+      { "name": "3 star", "count": 450 },
+      { "name": "4 star", "count": 960 },
+      { "name": "5 star", "count": 930 }
+    ]
+  },
+  {
+    "id": 10,
+    "image": "https://cdn-icons-png.flaticon.com/512/2111/2111624.png",
+    "title": "Spotify",
+    "companyName": "Spotify AB",
+    "description": "Listen to millions of songs, explore playlists, and enjoy podcasts for free. Discover your next favorite track, follow artists, and create your own playlists to enjoy music anytime, anywhere effortlessly.",
+    "size": 82,
+    "reviews": 920,
+    "ratingAvg": 4.6,
+    "downloads": 1000,
+    "ratings": [
+      { "name": "1 star", "count": 80 },
+      { "name": "2 star", "count": 160 },
+      { "name": "3 star", "count": 320 },
+      { "name": "4 star", "count": 880 },
+      { "name": "5 star", "count": 780 }
+    ]
+  },
+  {
+    "id": 11,
+    "image": "https://cdn-icons-png.flaticon.com/512/888/888879.png",
+    "title": "Telegram",
+    "companyName": "Telegram FZ LLC",
+    "description": "Send secure messages, share media, and create channels for communities. Telegram offers fast, reliable, and private communication with powerful tools, large groups, and cloud storage for messages.",
+    "size": 72,
+    "reviews": 1100,
+    "ratingAvg": 4.7,
+    "downloads": 1000,
+    "ratings": [
+      { "name": "1 star", "count": 100 },
+      { "name": "2 star", "count": 150 },
+      { "name": "3 star", "count": 400 },
+      { "name": "4 star", "count": 800 },
+      { "name": "5 star", "count": 4100 }
+    ]
+  },
+  {
+    "id": 12,
+    "image": "https://cdn-icons-png.flaticon.com/512/5968/5968672.png",
+    "title": "Zoom",
+    "companyName": "Zoom Video Communications",
+    "description": "Host HD video meetings, webinars, and conferences effortlessly. Zoom enables communication with teams and friends, offering screen sharing, chat, and collaboration tools across devices seamlessly.",
+    "size": 180,
+    "reviews": 2500,
+    "ratingAvg": 4.5,
+    "downloads": 3100,
+    "ratings": [
+      { "name": "1 star", "count": 200 },
+      { "name": "2 star", "count": 250 },
+      { "name": "3 star", "count": 600 },
+      { "name": "4 star", "count": 1000 },
+      { "name": "5 star", "count": 3600 }
+    ]
+  },
+  {
+    "id": 13,
+    "image": "https://cdn-icons-png.flaticon.com/512/888/888859.png",
+    "title": "Pinterest",
+    "companyName": "Pinterest Inc",
+    "description": "Discover creative ideas, organize inspiration, and save projects. Pinterest offers a platform to explore trends, DIY projects, and visual content shared by a global community effortlessly.",
+    "size": 92,
+    "reviews": 2100,
+    "ratingAvg": 4.6,
+    "downloads": 2500,
+    "ratings": [
+      { "name": "1 star", "count": 120 },
+      { "name": "2 star", "count": 160 },
+      { "name": "3 star", "count": 380 },
+      { "name": "4 star", "count": 1000 },
+      { "name": "5 star", "count": 3500 }
+    ]
+  },
+  {
+    "id": 14,
+    "image": "https://cdn-icons-png.flaticon.com/512/732/732255.png",
+    "title": "Amazon Shopping",
+    "companyName": "Amazon Mobile LLC",
+    "description": "Shop millions of products with ease. Compare prices, read reviews, enjoy fast delivery, and discover personalized deals. Amazon offers a seamless and secure shopping experience across categories and brands.",
+    "size": 150,
+    "reviews": 5600,
+    "ratingAvg": 4.7,
+    "downloads": 8900,
+    "ratings": [
+      { "name": "1 star", "count": 300 },
+      { "name": "2 star", "count": 350 },
+      { "name": "3 star", "count": 700 },
+      { "name": "4 star", "count": 2000 },
+      { "name": "5 star", "count": 6700 }
+    ]
+  },
+  {
+    "id": 15,
+    "image": "https://cdn-icons-png.flaticon.com/512/2111/2111370.png",
+    "title": "Discord",
+    "companyName": "Discord Inc",
+    "description": "Connect communities through text, voice, and video. Discord supports servers for gaming, work, or hobbies with flexible moderation, roles, and interactive bots for a rich communication experience.",
+    "size": 120,
+    "reviews": 3100,
+    "ratingAvg": 4.6,
+    "downloads": 4000,
+    "ratings": [
+      { "name": "1 star", "count": 200 },
+      { "name": "2 star", "count": 250 },
+      { "name": "3 star", "count": 600 },
+      { "name": "4 star", "count": 1000 },
+      { "name": "5 star", "count": 4000 }
+    ]
+  },
+  {
+    "id": 16,
+    "image": "https://cdn-icons-png.flaticon.com/512/2111/2111492.png",
+    "title": "Reddit",
+    "companyName": "Reddit Inc",
+    "description": "Join communities, discuss topics, share media, and vote on posts. Reddit brings together millions of users to explore trending news, hobbies, and niche interests in a dynamic forum environment.",
+    "size": 88,
+    "reviews": 1900,
+    "ratingAvg": 4.5,
+    "downloads": 2300,
+    "ratings": [
+      { "name": "1 star", "count": 150 },
+      { "name": "2 star", "count": 200 },
+      { "name": "3 star", "count": 400 },
+      { "name": "4 star", "count": 800 },
+      { "name": "5 star", "count": 3400 }
+    ]
+  },
+  {
+    "id": 17,
+    "image": "https://cdn-icons-png.flaticon.com/512/888/888847.png",
+    "title": "Duolingo",
+    "companyName": "Duolingo Inc",
+    "description": "Learn languages interactively with fun lessons, speaking, listening, reading, and writing exercises. Duolingo gamifies learning with rewards, challenges, and progress tracking to make language acquisition engaging.",
+    "size": 65,
+    "reviews": 2500,
+    "ratingAvg": 4.7,
+    "downloads": 3600,
+    "ratings": [
+      { "name": "1 star", "count": 100 },
+      { "name": "2 star", "count": 150 },
+      { "name": "3 star", "count": 300 },
+      { "name": "4 star", "count": 900 },
+      { "name": "5 star", "count": 3800 }
+    ]
+  },
+  {
+    "id": 18,
+    "image": "https://cdn-icons-png.flaticon.com/512/919/919831.png",
+    "title": "Canva",
+    "companyName": "Canva Pty Ltd",
+    "description": "Design graphics easily with templates for presentations, logos, social media, and more. Canva’s drag-and-drop interface, fonts, and assets help create stunning visuals quickly for personal or professional projects.",
+    "size": 140,
+    "reviews": 2900,
+    "ratingAvg": 4.8,
+    "downloads": 4100,
+    "ratings": [
+      { "name": "1 star", "count": 150 },
+      { "name": "2 star", "count": 200 },
+      { "name": "3 star", "count": 400 },
+      { "name": "4 star", "count": 1000 },
+      { "name": "5 star", "count": 4200 }
+    ]
+  },
+  {
+    "id": 19,
+    "image": "https://cdn-icons-png.flaticon.com/512/732/732221.png",
+    "title": "Microsoft Teams",
+    "companyName": "Microsoft Corporation",
+    "description": "Collaborate with teams, chat, call, and share files. Teams integrates productivity tools, online meetings, and project management features for seamless workplace communication and collaboration across devices.",
+    "size": 175,
+    "reviews": 3400,
+    "ratingAvg": 4.5,
+    "downloads": 5000,
+    "ratings": [
+      { "name": "1 star", "count": 250 },
+      { "name": "2 star", "count": 300 },
+      { "name": "3 star", "count": 500 },
+      { "name": "4 star", "count": 1200 },
+      { "name": "5 star", "count": 4200 }
+    ]
+  },
+  {
+    "id": 20,
+    "image": "https://cdn-icons-png.flaticon.com/512/281/281764.png",
+    "title": "Google Photos",
+    "companyName": "Google LLC",
+    "description": "Store, organize, and relive your memories with smart storage. Google Photos offers AI-powered search, automatic backup, album creation, and easy sharing across devices with unlimited creativity and convenience.",
+    "size": 125,
+    "reviews": 4600,
+    "ratingAvg": 4.8,
+    "downloads": 8700,
+    "ratings": [
+      { "name": "1 star", "count": 220 },
+      { "name": "2 star", "count": 300 },
+      { "name": "3 star", "count": 600 },
+      { "name": "4 star", "count": 1500 },
+      { "name": "5 star", "count": 6800 }
+    ]
+  }
+]

@@ -25,12 +25,12 @@ const Navbar = () => {
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1 gap-[32px] text-[16px] font-medium">
                         <NavLink to=''>Home</NavLink>
-                        <NavLink to=''>Apps</NavLink>
+                        <NavLink to='/apps'>Apps</NavLink>
                         <NavLink to=''>Installation</NavLink>
                     </ul>
                 </div>
                 <div className="navbar-end ">
-                    <a className="bg-gradient-to-r from-[#632EE3] to-[#9F62F2] btn text-white text-[16px] font-semibold"><img src={git} alt="" /> Contribute</a>
+                    <a href='https://github.com/tanimahamed07' className="bg-gradient-to-r from-[#632EE3] to-[#9F62F2] btn text-white text-[16px] font-semibold"><img src={git} alt="" /> Contribute</a>
                 </div>
             </div>
         </div>
