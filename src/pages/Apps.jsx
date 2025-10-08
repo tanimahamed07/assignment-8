@@ -1,14 +1,22 @@
 import React, { useState } from 'react';
 import useApps from '../Hooks/useApps';
 import Card from '../components/Card';
+import Spinner from './Spinner';
 
 const Apps = () => {
-    const { apps  } = useApps()
+    const { apps, loading } = useApps()
     const [search, setSearch] = useState('');
+    const [searchLoading, setSearchLoading] = useState(false);
     const term = search.trim().toLocaleLowerCase()
-  const searchedApps = term 
-    ? apps.filter(app => app.title.toLocaleLowerCase().includes(term))
-    : apps;
+    const searchedApps = term
+        ? apps.filter(app => app.title.toLocaleLowerCase().includes(term))
+        : apps;
+    const handleSearch = (e) => {
+        setSearchLoading(true);   // start spinner
+        setSearch(e.target.value);
+        setSearchLoading(false);  // immediately stop spinner
+    };
+    if (loading || searchLoading) return (<Spinner></Spinner>)
     return (
         <>
             <div className='w-11/12 mx-auto py-[40px]'>
@@ -33,7 +41,7 @@ const Apps = () => {
                                     <path d="m21 21-4.3-4.3"></path>
                                 </g>
                             </svg>
-                            <input onChange={(e)=> setSearch(e.target.value)} defaultValue={search} type="search" required placeholder="Search Apps" />
+                            <input onChange={handleSearch} Value={search} type="search" required placeholder="Search Apps" />
                         </label>
                     </div>
                 </div>

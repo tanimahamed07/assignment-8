@@ -3,13 +3,15 @@ import Hero from './Hero';
 import Card from '../components/Card';
 import { Link } from 'react-router';
 import useApps from '../Hooks/useApps';
+import Spinner from './Spinner';
 
 const Home = () => {
-    const { apps } = useApps()
+    const { apps, loading } = useApps()
+    if(loading) return <Spinner></Spinner>
     return (
 
         <>
-            <Hero />
+            <Hero  />
             {/* card */}
             <div className='w-11/12 mx-auto py-[40px]'>
                 <div className='text-center'>

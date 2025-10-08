@@ -5,7 +5,6 @@ import { removeFromAppsList } from '../utils/localStorage';
 import { toast } from 'react-toastify';
 // import { removeFromLocalStorage } from '../utils/localStorage';
 const InstalledApps = ({ app, setAppList }) => {
-     
     const handleRemove = (id) => {
         removeFromAppsList(id)
         setAppList(prev => prev.filter(a => a.id !== id))
@@ -14,7 +13,8 @@ const InstalledApps = ({ app, setAppList }) => {
         })
     }
     console.log(app)
-    const { title, size, ratingAvg, downloads, image, id } = app
+    const { title, size, ratingAvg, downloads, image, id } = app;
+     
     return (
         <div>
             <div className='flex items-center gap-5 rounded-[4px] justify-between p-4 bg-white mb-4'>

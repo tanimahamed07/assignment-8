@@ -7,13 +7,13 @@ export const loadInstalledList = () => {
         return []
     }
 }
+
+
 export const updateList = (App) => {
     const appList = loadInstalledList()
     try {
-        const isDuplicate = appList.some(p => p.id === string(App.id))
-        if (isDuplicate)
-            return
-        // alert('Already added in Apps')
+        const isDuplicate = appList.some(p => p.id === App.id)
+        if (isDuplicate) return alert('Already added in Apps')
         const updatedAppList = [...appList, App]
         localStorage.setItem('installedList', JSON.stringify(updatedAppList))
     } catch (err) {
