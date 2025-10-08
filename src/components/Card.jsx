@@ -8,7 +8,7 @@ const Card = ({app}) => {
     return (
         
           <Link to={`/apps/${id}`}>
-            <div className='card-body shadow p-[16px] rounded-[4px]'>
+            <div className='card-body shadow p-[16px] rounded-[4px] bg-white'>
                 <div className=''>
                     <img className='rounded-[8px] w-full' src={image} alt="" />
                 </div>

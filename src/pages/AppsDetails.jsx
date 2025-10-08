@@ -5,19 +5,31 @@ import download from '../assets/icon-downloads.png'
 import star from '../assets/icon-ratings.png'
 import like from '../assets/icon-review.png'
 import { updateList } from '../utils/localStorage';
+import { toast } from 'react-toastify';
+import { Bar, BarChart, CartesianGrid, Legend, Rectangle, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
+import CustomError from './CustomError';
+import Spinner from './Spinner';
 // import { addToLocalStorage } from '../utils/localStorage';
 const AppsDetails = () => {
     const params = useParams()
-    const { apps } = useApps()
+    const { apps, error, loading} = useApps()
     const [toggle, setToggle] = useState(false)
     // console.log(params.id)
     const id = params.id;
     const appDetails = apps.find(app => app.id == id) || {}
     // console.log(appDetails)
-    if(toggle){
-        updateList(appDetails)
-    }
-    const { image, title, companyName, ratingAvg, reviews, downloads, size } = appDetails
+    const handleInstall = () => {
+        updateList(appDetails);
+        toast.success(`${appDetails.title} - App installed from your Device!`, {
+            position: "top-center"
+        });
+        setToggle(true);
+    };
+    const { image, title, companyName, ratingAvg, reviews, downloads, size, ratings, description } = appDetails
+    console.log(ratings)
+if(loading) return <Spinner></Spinner>
+
+    if (!appDetails.id) return <CustomError></CustomError>;
     return (
         <div className='w-11/12 mx-auto'>
             <div>
@@ -34,14 +46,37 @@ const AppsDetails = () => {
                             <div className='w-[150px]'><img src={star} alt="" /><p>Average Ratings</p><h1 className='text-[40px] font-extrabold'>{ratingAvg}</h1></div>
                             <div className='w-[150px]'><img src={like} alt="" /><p>Total Reviews</p><h1 className='text-[40px] font-extrabold'>{reviews}K</h1></div>
                         </div>
-                        <button onClick={()=> setToggle(true)} className={`
-                        ${toggle ? 'bg-gray-400 cursor-not-allowed' : 'bg-[#00D390]'}
-                            bg-[#00D390] disable text-white px-[20px] py-[14px] rounded-[4px] mt-[30px]`}>{toggle ? 'Installed': 'Install'} ({size} MB)</button>
+                        <button
+                            onClick={handleInstall}
+                            disabled={toggle}
+                            className={`${toggle ? 'bg-gray-400 cursor-not-allowed' : 'bg-[#00D390]'} text-white px-[20px] py-[14px] rounded-[4px] mt-[30px]`}
+                        >
+                            {toggle ? 'Installed' : 'Install'} ({size} MB)
+                        </button>
                     </div>
                 </div>
                 <hr className="border-t-3 border-gray-300 my-[30px] w-full" />
+                <h1>Ratings</h1>
+                <ResponsiveContainer width="100%" height={300}>
+                    <BarChart
+                        layout="vertical"
+                        data={ratings}
+                    >
+                        <CartesianGrid strokeDasharray="3 3" />
+                        <XAxis type="number" />
+                        <YAxis dataKey="name" type="category" />
+                        <Tooltip />
+                        <Legend />
+                        <Bar dataKey="count" fill="#FF8811" />
+                    </BarChart>
+                </ResponsiveContainer>
+                <hr className="border-t-3 border-gray-300 my-[30px] w-full" />
+                <div className='space-y-1.5 pt-[40px] pb-[80px]'>
+                    <h1 className='font-semibold text-[24px]'>Description</h1>
+                    <p className='text-[#627382]'>{description}</p>
+                </div>
             </div>
-        </div>
+        </div >
     );
 };
 

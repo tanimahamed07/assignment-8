@@ -6,9 +6,7 @@ import { loadInstalledList } from '../utils/localStorage';
 
 const Installation = () => {
     const [appList, setAppList] = useState(() => loadInstalledList());
-
     const [sortOrder, setSortOrder] = useState('none')
-
     const sortedItem = (() => {
         if (sortOrder === 'size-asc') {
             return [...appList].sort((a, b) => a.size - b.size)
@@ -18,18 +16,6 @@ const Installation = () => {
             return appList
         }
     })()
-
-
-    // const appList = loadInstalledList()
-    // console.log(appList)
-    // const { apps } = useApps()
-    // console.log(apps)
-    // const installedAppsId = getStoredApps();
-    // console.log(installedAppsId)
-    // const installedApps = apps.filter(app => installedAppsId.includes(app.id.toString()));
-    // console.log(installedApps.slice(0, 1))
-
-
     return (
         <div className='w-11/12 mx-auto'>
             <div className='text-center pt-[80px] pb-[40px]'>
