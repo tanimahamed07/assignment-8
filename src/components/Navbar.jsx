@@ -4,7 +4,7 @@ import git from '../assets/Vector.png'
 import logo from '../assets/logo.png'
 const Navbar = () => {
     return (
-        <div className='bg-[#E9E9E9] w-full'> 
+        <div className='bg-[white] w-full'> 
             <div className="navbar w-11/12 mx-auto">
                 <div className="navbar-start">
                     <div className="dropdown">
@@ -26,7 +26,7 @@ const Navbar = () => {
                     <ul className="menu menu-horizontal px-1 gap-[32px] text-[16px] font-medium">
                         <NavLink to=''>Home</NavLink>
                         <NavLink to='/apps'>Apps</NavLink>
-                        <NavLink to=''>Installation</NavLink>
+                        <NavLink to='/installation'>Installation</NavLink>
                     </ul>
                 </div>
                 <div className="navbar-end ">

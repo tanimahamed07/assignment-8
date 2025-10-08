@@ -3,7 +3,7 @@ import useApps from '../Hooks/useApps';
 import Card from '../components/Card';
 
 const Apps = () => {
-    const { apps } = useApps()
+    const { apps  } = useApps()
     const [search, setSearch] = useState('');
     const term = search.trim().toLocaleLowerCase()
   const searchedApps = term 
