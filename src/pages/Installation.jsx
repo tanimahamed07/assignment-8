@@ -22,16 +22,21 @@ const Installation = () => {
                 <h1 className='text-[#001931] font-bold text-[48px]'>Trending Apps</h1>
                 <p className='text-[#627382] text-xl'>Explore All Trending Apps on the Market developed by us</p>
             </div>
-            <div className='flex items-center justify-between pb-4'>
-                <h1 className='text-[24px] font-semibold'>{appList.length} Apps Found</h1>
-                <label className='form-control w-full max-w-xs'>
+            <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-3 pb-4">
+           
+                <h1 className="text-[20px] md:text-[24px] font-semibold text-center md:text-left">
+                    {appList.length} Apps Found
+                </h1>
+
+                <label className="form-control w-full md:w-auto max-w-xs mx-auto md:mx-0">
                     <select
-                        className='select select-border'
+                        className="select select-bordered w-full"
                         value={sortOrder}
-                        onChange={e => setSortOrder(e.target.value)}>
+                        onChange={(e) => setSortOrder(e.target.value)}
+                    >
                         <option value="none">Sort by price</option>
-                        <option value="size-asc">Low-&gt;High</option>
-                        <option value="size-desc">High-&gt;Low</option>
+                        <option value="size-asc">Low → High</option>
+                        <option value="size-desc">High → Low</option>
                     </select>
                 </label>
             </div>

@@ -17,23 +17,28 @@ const Hero = () => {
                 </div>
                 <div><img className='' src={hero} alt="" /></div>
             </div>
-            <div className='bg-gradient-to-r from-[#632EE3] to-[#9F62F2] py-[80px]'>
-                <h1 className='text-center text-[48px] font-bold text-white'>Trusted by Millions, Built for You</h1>
-                <div className='flex justify-around py-[40px]'>
-                    <div className='text-center max-w-[342px]'>
-                        <p className='text-white'>Total Downloads</p>
-                        <h1 className='text-white font-extrabold text-[64px]'>29.6M</h1>
-                        <p className='text-white'>21% more than last month</p>
+            <div className="bg-gradient-to-r from-[#632EE3] to-[#9F62F2] py-[80px] px-4">
+                <h1 className="text-center text-[32px] md:text-[48px] font-bold text-white">
+                    Trusted by Millions, Built for You
+                </h1>
+
+                <div className="flex flex-col md:flex-row justify-around py-[40px] gap-[30px] md:gap-0 items-center">
+                    <div className="text-center max-w-[342px]">
+                        <p className="text-white">Total Downloads</p>
+                        <h1 className="text-white font-extrabold text-[48px] md:text-[64px]">29.6M</h1>
+                        <p className="text-white">21% more than last month</p>
                     </div>
-                    <div className='text-center max-w-[342px]'>
-                        <p className='text-white'>Total Reviews</p>
-                        <h1 className='text-white font-extrabold text-[64px]'>906K</h1>
-                        <p className='text-white'>46% more than last month</p>
+
+                    <div className="text-center max-w-[342px]">
+                        <p className="text-white">Total Reviews</p>
+                        <h1 className="text-white font-extrabold text-[48px] md:text-[64px]">906K</h1>
+                        <p className="text-white">46% more than last month</p>
                     </div>
-                    <div className='text-center max-w-[342px]'>
-                        <p className='text-white'>Active Apps</p>
-                        <h1 className='text-white font-extrabold text-[64px]'>132+</h1>
-                        <p className='text-white'>31 more will Launch</p>
+
+                    <div className="text-center max-w-[342px]">
+                        <p className="text-white">Active Apps</p>
+                        <h1 className="text-white font-extrabold text-[48px] md:text-[64px]">132+</h1>
+                        <p className="text-white">31 more will Launch</p>
                     </div>
                 </div>
             </div>

@@ -12,7 +12,7 @@ import Spinner from './Spinner';
 // import { addToLocalStorage } from '../utils/localStorage';
 const AppsDetails = () => {
     const params = useParams()
-    const { apps, error, loading} = useApps()
+    const { apps, loading } = useApps()
     const [toggle, setToggle] = useState(false)
     // console.log(params.id)
     const id = params.id;
@@ -27,13 +27,13 @@ const AppsDetails = () => {
     };
     const { image, title, companyName, ratingAvg, reviews, downloads, size, ratings, description } = appDetails
     console.log(ratings)
-if(loading) return <Spinner></Spinner>
+    if (loading) return <Spinner></Spinner>
 
     if (!appDetails.id) return <CustomError></CustomError>;
     return (
         <div className='w-11/12 mx-auto'>
             <div>
-                <div className='flex items-center gap-[40px] pt-[80px] pb-[40px] '>
+                <div className='flex flex-col md:flex-row items-center gap-[40px] pt-[80px] pb-[40px] '>
                     <div>
                         <img className='shadow max-w-[350px] max-h-[350px]' src={image} alt="" />
                     </div>
@@ -41,10 +41,24 @@ if(loading) return <Spinner></Spinner>
                         <h1 className='text-[32px] font-bold'>{title}</h1>
                         <p className='text-[20px]'><span className='text-[#627382]'>Developed by</span> <span className='text-[#632EE3] font-semibold'>{companyName}</span></p>
                         <hr className="border-t border-gray-300 my-[30px] w-full" />
-                        <div className='flex gap-[30px]'>
-                            <div className='w-[150px]'><img src={download} alt="" /><p>Downloads</p> <h1 className='text-[40px] font-extrabold'>{downloads}K</h1></div>
-                            <div className='w-[150px]'><img src={star} alt="" /><p>Average Ratings</p><h1 className='text-[40px] font-extrabold'>{ratingAvg}</h1></div>
-                            <div className='w-[150px]'><img src={like} alt="" /><p>Total Reviews</p><h1 className='text-[40px] font-extrabold'>{reviews}K</h1></div>
+                        <div className="flex flex-col md:flex-row gap-[20px] md:gap-[30px] items-center md:items-start">
+                            <div className="w-[150px] text-center md:text-left">
+                                <img src={download} alt="" className="mx-auto md:mx-0" />
+                                <p>Downloads</p>
+                                <h1 className="text-[32px] md:text-[40px] font-extrabold">{downloads}K</h1>
+                            </div>
+
+                            <div className="w-[150px] text-center md:text-left">
+                                <img src={star} alt="" className="mx-auto md:mx-0" />
+                                <p>Average Ratings</p>
+                                <h1 className="text-[32px] md:text-[40px] font-extrabold">{ratingAvg}</h1>
+                            </div>
+
+                            <div className="w-[150px] text-center md:text-left">
+                                <img src={like} alt="" className="mx-auto md:mx-0" />
+                                <p>Total Reviews</p>
+                                <h1 className="text-[32px] md:text-[40px] font-extrabold">{reviews}K</h1>
+                            </div>
                         </div>
                         <button
                             onClick={handleInstall}
