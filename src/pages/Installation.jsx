@@ -8,10 +8,10 @@ const Installation = () => {
     const [appList, setAppList] = useState(() => loadInstalledList());
     const [sortOrder, setSortOrder] = useState('none')
     const sortedItem = (() => {
-        if (sortOrder === 'size-asc') {
-            return [...appList].sort((a, b) => a.size - b.size)
-        } else if (sortOrder === 'size-desc') {
-            return [...appList].sort((a, b) => b.size - a.size)
+        if (sortOrder === 'download-asc') {
+            return [...appList].sort((a, b) => a.downloads - b.downloads)
+        } else if (sortOrder === 'download-desc') {
+            return [...appList].sort((a, b) => b.downloads - a.downloads)
         } else {
             return appList
         }
@@ -34,9 +34,9 @@ const Installation = () => {
                         value={sortOrder}
                         onChange={(e) => setSortOrder(e.target.value)}
                     >
-                        <option value="none">Sort by price</option>
-                        <option value="size-asc">Low → High</option>
-                        <option value="size-desc">High → Low</option>
+                        <option value="none">Sort by download count</option>
+                        <option value="download-asc">Low → High</option>
+                        <option value="download-desc">High → Low</option>
                     </select>
                 </label>
             </div>
