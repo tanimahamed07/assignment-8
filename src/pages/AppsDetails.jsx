@@ -30,7 +30,6 @@ const AppsDetails = () => {
     if (loading) return <Spinner></Spinner>
 
     if (!appDetails.id) return <CustomError></CustomError>;
-
     return (
         <div className='w-11/12 mx-auto'>
             <div>
@@ -64,7 +63,8 @@ const AppsDetails = () => {
                         <button
                             onClick={handleInstall}
                             disabled={toggle}
-                            className={`${toggle ? 'bg-gray-400 cursor-not-allowed' : 'bg-[#00D390]'} text-white px-[20px] py-[14px] rounded-[4px] mt-[30px]`} >
+                            className={`${toggle ? 'bg-gray-400 cursor-not-allowed' : 'bg-[#00D390]'} text-white px-[20px] py-[14px] rounded-[4px] mt-[30px]`}
+                        >
                             {toggle ? 'Installed' : 'Install'} ({size} MB)
                         </button>
                     </div>

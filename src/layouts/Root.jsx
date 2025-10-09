@@ -13,7 +13,6 @@ const Root = () => {
             <Navbar></Navbar>
             <div className='flex-1 bg-[#E9E9E9]'>
                 <Outlet></Outlet>
-
             </div>
             <Footer></Footer>
             <ToastContainer></ToastContainer>
