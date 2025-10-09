@@ -4,7 +4,7 @@ import git from '../assets/Vector.png'
 import logo from '../assets/logo.png'
 const Navbar = () => {
     return (
-        <div className='bg-[white] w-full'> 
+        <div className='bg-[white] w-full'>
             <div className="navbar w-11/12 mx-auto">
                 <div className="navbar-start">
                     <div className="dropdown">
@@ -15,12 +15,12 @@ const Navbar = () => {
                             tabIndex={0}
                             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow ">
                             <NavLink to=''>Home</NavLink>
-                            <NavLink to=''>Apps</NavLink>
-                            <NavLink to=''>Installation</NavLink>
+                            <NavLink to='/apps'>Apps</NavLink>
+                            <NavLink to='/installation'>Installation</NavLink>
 
                         </ul>
                     </div>
-                    <a className="flex items-center text-[16px] font-bold bg-gradient-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent"><img className='w-[40px]' src={logo} alt="" /> HERO.IO</a>
+                    <a href='/' className="flex items-center text-[16px] font-bold bg-gradient-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent"><img className='w-[40px]' src={logo} alt="" />HERO.IO</a>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1 gap-[32px] text-[16px] font-medium">

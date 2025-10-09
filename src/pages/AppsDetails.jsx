@@ -30,6 +30,7 @@ const AppsDetails = () => {
     if (loading) return <Spinner></Spinner>
 
     if (!appDetails.id) return <CustomError></CustomError>;
+
     return (
         <div className='w-11/12 mx-auto'>
             <div>
@@ -45,7 +46,7 @@ const AppsDetails = () => {
                             <div className="w-[150px] text-center md:text-left">
                                 <img src={download} alt="" className="mx-auto md:mx-0" />
                                 <p>Downloads</p>
-                                <h1 className="text-[32px] md:text-[40px] font-extrabold">{downloads}K</h1>
+                                <h1 className="text-[32px] md:text-[40px] font-extrabold">{downloads}M</h1>
                             </div>
 
                             <div className="w-[150px] text-center md:text-left">
@@ -63,8 +64,7 @@ const AppsDetails = () => {
                         <button
                             onClick={handleInstall}
                             disabled={toggle}
-                            className={`${toggle ? 'bg-gray-400 cursor-not-allowed' : 'bg-[#00D390]'} text-white px-[20px] py-[14px] rounded-[4px] mt-[30px]`}
-                        >
+                            className={`${toggle ? 'bg-gray-400 cursor-not-allowed' : 'bg-[#00D390]'} text-white px-[20px] py-[14px] rounded-[4px] mt-[30px]`} >
                             {toggle ? 'Installed' : 'Install'} ({size} MB)
                         </button>
                     </div>
