@@ -28,7 +28,6 @@ const AppsDetails = () => {
     const { image, title, companyName, ratingAvg, reviews, downloads, size, ratings, description } = appDetails
     console.log(ratings)
     if (loading) return <Spinner></Spinner>
-
     if (!appDetails.id) return <CustomError></CustomError>;
     return (
         <div className='w-11/12 mx-auto'>
