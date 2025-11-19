@@ -17,7 +17,7 @@ Installed apps list where users can view all installed apps and uninstall them e
 
 ## Tech Stack
 
-**Client:**  Tailwind CSS, DaisyUI, JS
+**Client:**  Tailwind CSS, DaisyUI, JS, React
 
 
 ## Installation
