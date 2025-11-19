@@ -25,7 +25,7 @@ Installed apps list where users can view all installed apps and uninstall them e
 Install my-project with npm
 
 ```bash
-  git clone https://github.com/tanimahamed07/assignment-10-client.git
+  git clone https://github.com/tanimahamed07/assignment-8.git
   cd my-project
   npm install
 ```
@@ -33,8 +33,8 @@ Install my-project with npm
 
 ## Live Preview & Repositories
 - 🚀 Live Site: https://cute-tarsier-057813.netlify.app/
-- 💻 Client Repo: https://github.com/tanimahamed07/assignment-10-client
-- 🛠️ Server Repo: https://github.com/tanimahamed07/assignment-10-server
+- 💻 Client Repo: https://github.com/tanimahamed07/assignment-8.git
+
 
 
 ## Author
