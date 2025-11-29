@@ -32,7 +32,7 @@ Install my-project with npm
     
 
 ## Live Preview & Repositories
-- 🚀 Live Site: https://cute-tarsier-057813.netlify.app/](https://tanim121.netlify.app/
+- 🚀 Live Site: https://tanim121.netlify.app/
 - 💻 Client Repo: https://github.com/tanimahamed07/assignment-8.git
 
 
